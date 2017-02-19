@@ -1,0 +1,12 @@
+562G	/blackburn3/RAW_BACKUP/2011
+130G	/blackburn3/RAW_BACKUP/2012
+442G	/blackburn3/RAW_BACKUP/2013
+1.3T	/blackburn3/RAW_BACKUP/2014
+1.9T	/blackburn3/RAW_BACKUP/2015
+2.8T	/blackburn3/RAW_BACKUP/2016
+464K	/blackburn3/RAW_BACKUP/database
+24K	/blackburn3/RAW_BACKUP/Default.lyt
+12K	/blackburn3/RAW_BACKUP/@eaDir
+12K	/blackburn3/RAW_BACKUP/Thumbs.db
+4.0K	/blackburn3/RAW_BACKUP/wash
+4.5G	/blackburn3/RAW_BACKUP/Xcalibur

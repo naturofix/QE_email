@@ -471,7 +471,7 @@ for file_path in refs:
 		summary_hit = 1
 #summary_hit = 1
 if summary_hit == 1:
-	cmd = 'python /blackburn3/scripts/QC/QC_summary.py /mnt/BLACKBURNLAB/QC/Reference/'
+	cmd = 'python /mnt/BLACKBURNLAB/scripts/QC/QC_summary.py /mnt/BLACKBURNLAB/QC/Reference/'
 	print cmd
 
 	#p = subprocess.Popen(cmd,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
@@ -521,7 +521,7 @@ for file_path in refs:
 
 #summary_hit = 1
 if summary_hit == 1:
-	cmd = 'python /blackburn3/scripts/QC/run_calibration_summary.py /blackburn3/scripts/QC/ /mnt/BLACKBURNLAB/QC/QE_calibration/'
+	cmd = 'python /mnt/BLACKBURNLAB/QC/run_calibration_summary.py /mnt/BLACKBURNLAB/QC/ /mnt/BLACKBURNLAB/QC/QE_calibration/'
 	print(cmd)
 	os.system(cmd)
 	message = """

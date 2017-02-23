@@ -471,7 +471,7 @@ for file_path in refs:
 		summary_hit = 1
 #summary_hit = 1
 if summary_hit == 1:
-	cmd = 'python /mnt/BLACKBURNLAB/scripts/QC/QC_summary.py /mnt/BLACKBURNLAB/QC/Reference/'
+	cmd = 'python /mnt/BLACKBURNLAB/scripts/QC/QC_summary.py /mnt/BLACKBURNLAB/QC/Reference/ %s' %(last_time)
 	print cmd
 
 	#p = subprocess.Popen(cmd,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
@@ -482,7 +482,10 @@ if summary_hit == 1:
 		print_file_name = summary_file_name.split('/')[-1]
 		message = """
 		Image generated from the MaxQuant summary.txt file for the Reference Samples
-		The full set of images can be found in QC/Reference/summary/
+		
+		An interactive R Shiny app can be found at
+
+		http://watson:3838/MQ_summary.Rmd
 		Horizontal lines
 		green 		 	: maximum for C1 600ng
 		lightgreen 	 	: 80% of maximum for C1
@@ -495,45 +498,45 @@ if summary_hit == 1:
 
 		cmd = "echo '%s' | mail -s 'MaxQuant summary.txt' -a %s %s" %(message,summary_file_name,email_line)
 		print cmd
-		if test != 'test':
-			os.system(cmd)
+		#if test != 'test':
+		os.system(cmd)
 else:
 	print 'no new summmary.txt file since \t:\t%s' %(datetime.datetime.fromtimestamp(int(max(time_list))).strftime('%d %B %Y : %H %M'))
 	#print max(time_list)
 
-
+#raw_input('MQ - summary')
 ##### Calibration Summary  ##########
 
-print '\n\nSummarising the Calibration Log files\n'
-calibration_path = '/blackburn3/RAW_Data/Q_Exactive_2014/Xcalibur/system/Exactive/log'
-refs = []
-for root, dirnames, filenames in os.walk(calibration_path):
-  for filename in fnmatch.filter(filenames, 'Thermo*'):
-    refs.append(os.path.join(root, filename))
+# print '\n\nSummarising the Calibration Log files\n'
+# calibration_path = '/blackburn3/RAW_Data/Q_Exactive_2014/Xcalibur/system/Exactive/log'
+# refs = []
+# for root, dirnames, filenames in os.walk(calibration_path):
+#   for filename in fnmatch.filter(filenames, 'Thermo*'):
+#     refs.append(os.path.join(root, filename))
 
-#print refs
-time_list = []
-for file_path in refs:
-	file_time = os.path.getmtime(file_path)
-	time_list.append(file_time)
-	if file_time > last_time:
-		summary_hit = 1
+# #print refs
+# time_list = []
+# for file_path in refs:
+# 	file_time = os.path.getmtime(file_path)
+# 	time_list.append(file_time)
+# 	if file_time > last_time:
+# 		summary_hit = 1
 
-#summary_hit = 1
-if summary_hit == 1:
-	cmd = 'python /mnt/BLACKBURNLAB/QC/run_calibration_summary.py /mnt/BLACKBURNLAB/QC/ /mnt/BLACKBURNLAB/QC/QE_calibration/'
-	print(cmd)
-	os.system(cmd)
-	message = """
-	Summary of the information in Xcalibur/system/Exactive/log/Thermo Exactive ...
-	"""
-	calibration_summary_file_name = '/mnt/BLACKBURNLAB/QC/QE_calibration/calibration.pdf'
-	cmd = "echo '%s' | mail -s 'MaxQuant summary.txt' -a %s %s" %(message,calibration_summary_file_name,'shaungarnett@gmail.com')
-	print cmd
-	#if test != 'test':
-	#	os.system(cmd)
-else:
-	print 'no new calibration log file since \t:\t%s' %(datetime.datetime.fromtimestamp(int(max(time_list))).strftime('%d %B %Y : %H %M'))
+# #summary_hit = 1
+# if summary_hit == 1:
+# 	cmd = 'python /mnt/BLACKBURNLAB/scripts/QC/run_calibration_summary.py /mnt/BLACKBURNLAB/scripts/QC/ /mnt/BLACKBURNLAB/QC/QE_calibration/ %s' %(last_time)
+# 	print(cmd)
+# 	os.system(cmd)
+# 	message = """
+# 	Summary of the information in Xcalibur/system/Exactive/log/Thermo Exactive ...
+# 	"""
+# 	calibration_summary_file_name = '/mnt/BLACKBURNLAB/QC/QE_calibration/calibration.pdf'
+# 	cmd = "echo '%s' | mail -s 'MaxQuant summary.txt' -a %s %s" %(message,calibration_summary_file_name,'shaungarnett@gmail.com')
+# 	print cmd
+# 	#if test != 'test':
+# 	#	os.system(cmd)
+# else:
+# 	print 'no new calibration log file since \t:\t%s' %(datetime.datetime.fromtimestamp(int(max(time_list))).strftime('%d %B %Y : %H %M'))
 
 
 

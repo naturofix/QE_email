@@ -578,6 +578,6 @@ print 'last sample log\t:\t%s\t:\t%s' %(last_sample_log,datetime.datetime.fromti
 
 
 print 'complete'
-os.systme('exit')
+os.system('exit')
 
 

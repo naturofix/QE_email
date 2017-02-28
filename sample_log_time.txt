@@ -1562,3 +1562,24 @@ echo 'sample log : Date_Name_Sample_Log.pptx' | mail -s 'Sample Log' -a /blackbu
 2017-02-01
 echo 'sample log : Date_Name_Sample_Log.pptx' | mail -s 'Sample Log' -a /blackburn3/RAW_Data/Q_Exactive_2014/2017/February/Date_Name_Sample_Log.pptx shaungarnett@gmail.com,andrewjmnel@gmail.com,nelsonasoares@gmail.com,bridgetcalder@gmail.com,suereta.fortuin1@gmail.com,alexandergiddey@gmail.com,muneerah.smith@gmail.com,omesan.nair@gmail.com,naadir.ganief@gmail.com
 
+2017-02-01
+echo 'sample log : 17_02_23_CH_BAL_Optimisation.pptx' | mail -s 'Sample Log' -a /blackburn3/RAW_Data/Q_Exactive_2014/2017/February/17_02_23_CH_BAL_Optimisation.pptx shaungarnett@gmail.com,andrewjmnel@gmail.com,nelsonasoares@gmail.com,bridgetcalder@gmail.com,suereta.fortuin1@gmail.com,alexandergiddey@gmail.com,muneerah.smith@gmail.com,omesan.nair@gmail.com,naadir.ganief@gmail.com
+
+2017-02-01
+echo 'sample log : 17_02_23_CH_BAL_Optimisation.pptx' | mail -s 'Sample Log' -a /blackburn3/RAW_Data/Q_Exactive_2014/2017/February/17_02_23_CH_BAL_Optimisation.pptx shaungarnett@gmail.com,andrewjmnel@gmail.com,nelsonasoares@gmail.com,bridgetcalder@gmail.com,suereta.fortuin1@gmail.com,alexandergiddey@gmail.com,muneerah.smith@gmail.com,omesan.nair@gmail.com,naadir.ganief@gmail.com
+
+2017-02-01
+echo 'sample log : 17_02_23_CH_BAL_Optimisation.pptx' | mail -s 'Sample Log' -a /blackburn3/RAW_Data/Q_Exactive_2014/2017/February/17_02_23_CH_BAL_Optimisation.pptx shaungarnett@gmail.com,andrewjmnel@gmail.com,nelsonasoares@gmail.com,bridgetcalder@gmail.com,suereta.fortuin1@gmail.com,alexandergiddey@gmail.com,muneerah.smith@gmail.com,omesan.nair@gmail.com,naadir.ganief@gmail.com
+
+2017-02-01
+echo 'sample log : 17_02_23_CH_BAL_Optimisation.pptx' | mail -s 'Sample Log' -a /blackburn3/RAW_Data/Q_Exactive_2014/2017/February/17_02_23_CH_BAL_Optimisation.pptx shaungarnett@gmail.com,andrewjmnel@gmail.com,nelsonasoares@gmail.com,bridgetcalder@gmail.com,suereta.fortuin1@gmail.com,alexandergiddey@gmail.com,muneerah.smith@gmail.com,omesan.nair@gmail.com,naadir.ganief@gmail.com
+
+2017-02-01
+echo 'sample log : 17_02_23_CH_BAL_Optimisation.pptx' | mail -s 'Sample Log' -a /blackburn3/RAW_Data/Q_Exactive_2014/2017/February/17_02_23_CH_BAL_Optimisation.pptx shaungarnett@gmail.com,andrewjmnel@gmail.com,nelsonasoares@gmail.com,bridgetcalder@gmail.com,suereta.fortuin1@gmail.com,alexandergiddey@gmail.com,muneerah.smith@gmail.com,omesan.nair@gmail.com,naadir.ganief@gmail.com
+
+2017-02-01
+echo 'sample log : 17_02_23_CH_BAL_Optimisation.pptx' | mail -s 'Sample Log' -a /blackburn3/RAW_Data/Q_Exactive_2014/2017/February/17_02_23_CH_BAL_Optimisation.pptx shaungarnett@gmail.com,andrewjmnel@gmail.com,nelsonasoares@gmail.com,bridgetcalder@gmail.com,suereta.fortuin1@gmail.com,alexandergiddey@gmail.com,muneerah.smith@gmail.com,omesan.nair@gmail.com,naadir.ganief@gmail.com
+
+2017-02-01
+echo 'sample log : 17_02_23_CH_BAL_Optimisation.pptx' | mail -s 'Sample Log' -a /blackburn3/RAW_Data/Q_Exactive_2014/2017/February/17_02_23_CH_BAL_Optimisation.pptx shaungarnett@gmail.com,andrewjmnel@gmail.com,nelsonasoares@gmail.com,bridgetcalder@gmail.com,suereta.fortuin1@gmail.com,alexandergiddey@gmail.com,muneerah.smith@gmail.com,omesan.nair@gmail.com,naadir.ganief@gmail.com
+

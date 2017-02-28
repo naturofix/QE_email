@@ -477,8 +477,8 @@ if summary_hit == 1:
 	#p = subprocess.Popen(cmd,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 	os.system(cmd)
 	file_1 = '/mnt/BLACKBURNLAB/QC/Reference/summary/Peptide.Sequences.Identified_email.png'
-	file_2 = '/mnt/BLACKBURNLAB/QC/Reference/summary/Mass.Standard.Deviation..ppm._email.png'
-	for summary_file_name in [file_1,file_2]:
+	file_2 = '/mnt/BLACKBURNLAB/QC/Reference/summary/RAW_email.png'
+	for summary_file_name in [file_1]:
 		print_file_name = summary_file_name.split('/')[-1]
 		message = """
 		Image generated from the MaxQuant summary.txt file for the Reference Samples
@@ -496,7 +496,7 @@ if summary_hit == 1:
 		magenta 		: mean for C1 600ng 
 		"""
 
-		cmd = "echo '%s' | mail -s 'MaxQuant summary.txt' -a %s %s" %(message,summary_file_name,email_line)
+		cmd = "echo '%s' | mail -s 'MaxQuant summary.txt' -a %s -a %s %s" %(message,file_1,file_2,email_line)
 		print cmd
 		#if test != 'test':
 		os.system(cmd)

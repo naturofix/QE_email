@@ -237,7 +237,7 @@ if file_list == []:
 	#print day_time
 	hour = datetime.datetime.fromtimestamp(int(now_ms)).strftime('%H')
 	#raw_input(hour)
-	if day_time < 7:
+	if day_time < 0:
 		if day_time > 1 and int(hour) < 11:
 			cmd = "mail -s 'Sample Log - %s days since last update' %s < %s" %(round(day_time,0),email_line,message_file)
 			print cmd

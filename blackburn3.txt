@@ -1,0 +1,9 @@
+8.0K	/blackburn3/@eaDir
+1.5G	/blackburn3/opt
+7.0T	/blackburn3/RAW_BACKUP
+902G	/blackburn3/RAW_Data
+403M	/blackburn3/scripts
+171M	/blackburn3/sgarnett
+3.1G	/blackburn3/Targetted_MS_Experiments
+122M	/blackburn3/temp
+16K	/blackburn3/Thumbs.db
